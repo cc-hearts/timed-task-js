@@ -16,7 +16,7 @@ export interface Config {
 
   puppeteerConfig: {
     port: number
-    'xn-login': {
+    xnLogin: {
       url: string
       userName: string
       password: string
