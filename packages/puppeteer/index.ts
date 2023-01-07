@@ -7,6 +7,6 @@ const app = express()
 const { puppeteerConfig } = Config.getYamlConfig()
 const { port } = puppeteerConfig
 
-app.listen(port, '0,0,0,0', () => {
+app.listen(port, '0.0.0.0', () => {
     logger.success(`启动成功http://localhost:${port}`)
 })

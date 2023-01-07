@@ -6,6 +6,7 @@
   "scripts": {
     "engine": "pnpm --filter @repo/engine start",
     "service": "pnpm --filter @repo/service start:dev",
+    "puppeteer": "pnpm --filter @repo/puppeteer start",
     "lint": "eslint --fix --ext .ts"
   },
   "keywords": [
