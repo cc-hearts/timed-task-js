@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "engine": "pnpm --filter @repo/engine start"
+    "engine": "pnpm --filter @repo/engine start",
+    "lint": "eslint --fix --ext .ts"
   },
   "keywords": [
     "timed task"
   ],
   "author": "heart",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@cc-heart/eslint-config": "^0.0.1",
+    "typescript": "^4.9.4"
+  }
 }

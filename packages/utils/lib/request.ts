@@ -1,5 +1,4 @@
 import axios from "axios";
-import { logger } from "@cc-heart/utils";
 
 function formatMethod(method) {
   switch (String(method).toUpperCase()) {
