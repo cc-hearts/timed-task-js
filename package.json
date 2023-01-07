@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "engine": "pnpm --filter @repo/engine start",
+    "service": "pnpm --filter @repo/service start:dev",
     "lint": "eslint --fix --ext .ts"
   },
   "keywords": [
