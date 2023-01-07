@@ -1,0 +1,21 @@
+{
+  "name": "@repo/engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node-esm index.ts"
+  },
+  "keywords": [
+    "task interval engine"
+  ],
+  "author": "MIT",
+  "license": "heart",
+  "dependencies": {
+    "@repo/config": "*",
+    "@repo/utils": "*",
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1"
+  }
+}

@@ -17,10 +17,7 @@ export interface Config {
 
 export type callback = (...args: any[]) => any;
 
-export interface timerCallback {
-  (...args: any[]): any;
-  _timer?: NodeJS.Timer;
-}
+
 
 export interface InterEntity {
   id: number

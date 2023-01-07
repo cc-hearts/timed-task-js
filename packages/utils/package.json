@@ -13,6 +13,7 @@
   "author": "heart",
   "license": "MIT",
   "dependencies": {
-    "@cc-heart/utils": "^1.2.6"
+    "@cc-heart/utils": "^1.2.6",
+    "axios": "^1.2.2"
   }
 }
