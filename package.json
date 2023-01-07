@@ -2,12 +2,14 @@
   "name": "timed-task-js",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "engine": "pnpm --filter @repo/engine start",
     "service": "pnpm --filter @repo/service start:dev",
     "puppeteer": "pnpm --filter @repo/puppeteer start",
-    "lint": "eslint --fix --ext .ts"
+    "engine:prod": "pnpm --filter @repo/engine prod",
+    "build:core": "pnpm --filter=\"./packages/**\" -r --stream build",
+    "lint": "eslint --ext .ts . --fix"
   },
   "keywords": [
     "timed task"

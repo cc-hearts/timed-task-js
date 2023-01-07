@@ -15,7 +15,8 @@ async function useTask() {
     const taskList = await Task.searchAllTask();
     if (taskList instanceof Array) {
       taskList.forEach(async (acc) => {
-        let { method, url, cookie, params, interTime, id } = acc;
+        const { method, url, cookie, id } = acc;
+        let { params } = acc;
         const headers: { Cookie?: string } = {};
 
         if (cookie) {
@@ -28,7 +29,10 @@ async function useTask() {
           if (!cacheId) {
             logger.success("=======interval task pending========" + url);
             const res = await Fetch.request(url, method, params, headers);
-            logger.success(`=======interval task success======== ${url} , request data:`, res.data);
+            logger.success(
+              `=======interval task success======== ${url} , request data:`,
+              res.data
+            );
             await redis.set(String(id), url, "EX", 60 * 60 * 24);
           }
         } catch (e) {

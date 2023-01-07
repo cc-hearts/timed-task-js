@@ -4,7 +4,6 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "skipLibCheck": true,
-    "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true

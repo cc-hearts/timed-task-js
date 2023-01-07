@@ -1,4 +1,4 @@
-import type { timerCallback } from "types/types";
+import type { timerCallback } from "../types/types";
 
 export function addIntervalTask(callback: timerCallback, time = 1000 * 10) {
   callback._timer = setInterval(() => {

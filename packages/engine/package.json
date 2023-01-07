@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "ts-node-esm index.ts"
+    "start": "ts-node-esm index.ts",
+    "build": "tsc --project tsconfig.json",
+    "prod": "node ./dist/index.js"
   },
   "keywords": [
     "task interval engine"
