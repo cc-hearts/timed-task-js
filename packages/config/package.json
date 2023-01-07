@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@prisma/client": "^4.8.1",
-    "@repo/utils": "workspace:*",
+    "@repo/utils": "*",
     "@types/node": "^18.11.18",
     "ioredis": "^5.2.4",
     "js-yaml": "^4.1.0",

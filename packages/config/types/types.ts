@@ -13,6 +13,15 @@ export interface Config {
     port: number;
     database: string;
   };
+
+  puppeteerConfig: {
+    port: number
+    'xn-login': {
+      url: string
+      userName: string
+      password: string
+    }
+  }
 }
 
 export type callback = (...args: any[]) => any;
