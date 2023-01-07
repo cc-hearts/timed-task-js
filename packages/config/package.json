@@ -1,0 +1,22 @@
+{
+  "name": "@repo/config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sql config"
+  ],
+  "author": "heart",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^4.8.1",
+    "@repo/utils": "workspace:*",
+    "@types/node": "^18.11.18",
+    "js-yaml": "^4.1.0",
+    "prisma": "^4.8.1"
+  }
+}
