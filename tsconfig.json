@@ -3,7 +3,6 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
-    "baseUrl": ".",
     "skipLibCheck": true,
     "noEmit": true,
     "resolveJsonModule": true,
