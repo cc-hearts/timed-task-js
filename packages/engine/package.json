@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "ts-node-esm index.ts",
-    "build": "tsc --project tsconfig.json",
+    "build": "rollup -c",
     "prod": "node ./dist/index.js"
   },
   "keywords": [
@@ -15,9 +15,12 @@
   "author": "MIT",
   "license": "heart",
   "dependencies": {
-    "@repo/config": "*",
-    "@repo/utils": "*",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@repo/config": "workspace:^1.0.0",
+    "@repo/utils": "workspace:^1.0.0",
     "@types/node": "^18.11.18",
+    "rollup": "^3.9.1",
     "ts-node": "^10.9.1"
   }
 }

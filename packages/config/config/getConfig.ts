@@ -2,7 +2,7 @@ import { load } from "js-yaml";
 import { fileURLToPath } from "url";
 import { resolve } from "path";
 import { logger } from "@repo/utils";
-import type { Config } from "../types/types.js";
+import type { Config } from "../types/types";
 import { readFileSync } from "fs";
 
 function getYamlConfig(): Config | null {
