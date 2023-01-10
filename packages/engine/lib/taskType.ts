@@ -48,8 +48,9 @@ export async function interTask(acc: interTaskInstance) {
     logger.error(`task error url:${url}, id:${id}, error: ${e}`);
   }
 }
-export function puppeteerTask(acc: interTaskInstance) {
-  //
-  const { url } = acc
-  // params 需要填写名字
+export async function puppeteerTask(acc: interTaskInstance) {
+  const { url, params, id } = acc;
+  logger.info("params is ", params);
+  const res = await Fetch.request(url, "GET", Object.assign({}, params, id));
+  logger.success(`${url} is request success`, res);
 }
