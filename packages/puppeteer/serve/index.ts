@@ -1,1 +1,1 @@
-export * from "./xnLogin.js";
+export {default as xnLogin} from "./xnLogin.js";

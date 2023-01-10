@@ -1,12 +1,22 @@
-import express from 'express'
-import { logger } from '@repo/utils'
-import { Config } from '@repo/config'
+import express from "express";
+import { logger } from "@repo/utils";
+import { Config } from "@repo/config";
+import router from "./router.js";
+import bodyParse from "body-parser";
 
-const app = express()
+const app = express();
 
-const { puppeteerConfig } = Config.getYamlConfig()
-const { port } = puppeteerConfig
+const { urlencoded, json } = bodyParse;
 
-app.listen(port, '0.0.0.0', () => {
-    logger.success(`启动成功http://localhost:${port}`)
-})
+app.use(urlencoded({ extended: false }));
+
+app.use(json());
+
+const { puppeteerConfig } = Config.getYamlConfig();
+const { port } = puppeteerConfig;
+
+app.use(router);
+
+app.listen(port, "0.0.0.0", () => {
+  logger.success(`启动成功http://localhost:${port}`);
+});
