@@ -20,4 +20,5 @@ model interTask {
   createTime  DateTime @default(now())
   updateTime  DateTime @default(now())
   isDelete    Int      @default(0)
+  taskType    Int      @default(1) // 1 http 测试 2 爬虫
 }

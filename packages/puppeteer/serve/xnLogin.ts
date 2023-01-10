@@ -9,7 +9,7 @@ export default async function xnLogin(id: number | string) {
     if (!xnLogin) {
         throw new Error('puppeteer xnLogin params error:' + xnLogin)
     }
-    
+
     const prisma = Prisma.getPrismaInstance()
 
     const { url, userName, password } = xnLogin
@@ -50,6 +50,6 @@ export default async function xnLogin(id: number | string) {
 
     logger.success(cookies);
 
-    return 'cookie'
+    return `${id} cookie update success`
 
 }
