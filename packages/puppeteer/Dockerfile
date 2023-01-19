@@ -4,7 +4,7 @@ LABEL maintainer="heart<7362469@qq.com>"
 
 WORKDIR /opt/timed-task-js
 
-COPY /opt/timed-task-js .
+COPY . .
 
 RUN apt-get update \
   && apt-get install -y wget gnupg \
