@@ -10,8 +10,9 @@
     "puppeteer": "pnpm --filter @repo/puppeteer start",
     "engine:prod": "pnpm --filter @repo/engine prod",
     "build:core": "pnpm --filter=\"./packages/**\" -r --stream build",
-    "build:prod": "pnpm --filter @repo/engine build && pnpm --filter @repo/puppeteer build",
-    "start:prod": "pnpm --filter @repo/engine start:prod && pnpm --filter @repo/puppeteer start:prod",
+    "ins": "pnpm --filter=\"./packages/**\" -r --stream  ins",
+    "build:prod": "pnpm --filter @repo/engine build",
+    "start:prod": "pnpm --filter @repo/engine start:prod",
     "lint": "eslint --ext .ts . --fix"
   },
   "keywords": [
@@ -33,6 +34,7 @@
     "@rollup/plugin-typescript": "^11.0.0",
     "rollup": "^3.9.1",
     "tslib": "^2.4.1",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "prisma": "^4.8.1"
   }
 }

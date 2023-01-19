@@ -6,6 +6,7 @@
   "type": "module",
   "types": "./types/index.ts",
   "scripts": {
+    "ins": "pnpm install",
     "build": "tsc -p tsconfig.json"
   },
   "keywords": [
@@ -14,10 +15,11 @@
   "author": "heart",
   "license": "MIT",
   "dependencies": {
+    "@prisma/client": "^4.7.1",
     "@repo/utils": "*",
     "@types/node": "^18.11.18",
     "ioredis": "^5.2.4",
-    "js-yaml": "^4.1.0",
-    "prisma": "^4.8.1"
+    "js-yaml": "^4.1.0"
+
   }
 }
