@@ -5,7 +5,7 @@ export default function cpConfigFile(copiedPath, resultPath) {
     buildEnd() {
       setTimeout(() => {
         copyFile(copiedPath, resultPath);
-      }, 300);
+      }, 1000);
     },
   };
 }
