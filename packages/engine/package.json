@@ -7,7 +7,7 @@
   "scripts": {
     "start": "ts-node-esm index.ts",
     "build": "rollup -c",
-    "prod": "node ./dist/index.js"
+    "start:prod": "node ./dist/index.js"
   },
   "keywords": [
     "task interval engine"

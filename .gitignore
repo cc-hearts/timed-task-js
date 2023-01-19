@@ -27,3 +27,5 @@ app.yaml
 
 pnpm-lock.yaml
 .env
+
+upload.sh

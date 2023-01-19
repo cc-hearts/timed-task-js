@@ -10,6 +10,8 @@
     "puppeteer": "pnpm --filter @repo/puppeteer start",
     "engine:prod": "pnpm --filter @repo/engine prod",
     "build:core": "pnpm --filter=\"./packages/**\" -r --stream build",
+    "build:prod": "pnpm --filter @repo/engine build && pnpm --filter @repo/puppeteer build",
+    "start:prod": "pnpm --filter @repo/engine start:prod && pnpm --filter @repo/puppeteer start:prod",
     "lint": "eslint --ext .ts . --fix"
   },
   "keywords": [

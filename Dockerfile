@@ -12,10 +12,8 @@ RUN npm install -g pnpm
 
 RUN pnpm install
 
-RUN  pnpm build:engine
-
-RUN cp /opt/timed-task-js/packages/config/config/app.yaml /opt/timed-task-js/packages/config/dist/config/app.yaml
+RUN  pnpm build:prod
 
 EXPOSE 5782
 
-CMD pnpm engine:prod
+CMD pnpm start:prod
