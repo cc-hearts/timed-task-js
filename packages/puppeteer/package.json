@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "ts-node-esm index.ts"
+    "start": "ts-node-esm index.ts",
+    "build": "tsc -p tsconfig.json"
   },
   "keywords": [
     "puppeteer"
