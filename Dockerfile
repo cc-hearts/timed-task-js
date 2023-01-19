@@ -12,6 +12,7 @@ RUN npm install -g pnpm
 
 RUN pnpm install -w
 
+RUN pnpm install --filter @repo/utils install
 RUN pnpm install --filter @repo/config install
 RUN pnpm install --filter @repo/engine install
 RUN pnpm install --filter @repo/puppeteer install
