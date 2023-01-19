@@ -1,6 +1,5 @@
 #!/bin/bash
 
-./prisma.sh
 
 docker rm -f task-time-js
 

@@ -12,6 +12,8 @@ RUN npm install -g pnpm
 
 RUN pnpm install
 
+RUN npx prisma generate --schema=/opt/timed-task-js/packages/config/prisma/schema.prisma
+
 RUN  pnpm build:prod
 
 EXPOSE 5782
