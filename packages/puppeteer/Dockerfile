@@ -36,4 +36,4 @@ RUN npx prisma generate --schema=/opt/timed-task-js/packages/config/prisma/schem
 
 EXPOSE 3001
 
-CMD pnpm start:prod
+CMD pnpm --filter @repo/puppeteer start:prod
