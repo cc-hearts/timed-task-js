@@ -7,6 +7,7 @@
   "scripts": {
     "start": "ts-node-esm index.ts",
     "build": "tsc -p tsconfig.json",
+    "rollup": "rollup -c",
     "start:prod": "node ./dist/index.js"
   },
   "keywords": [

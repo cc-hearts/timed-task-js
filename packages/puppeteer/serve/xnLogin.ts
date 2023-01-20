@@ -17,7 +17,7 @@ export default async function xnLogin(id: number | string) {
   const browser = await puppeteer.launch({
     // 路径
     executablePath:
-      "/usr/bin/chromium-browser",
+      "/Users/heart/Desktop/pupuper/Chromium.app/Contents/MacOS/Chromium",
     timeout: 1000 * 30,
   });
 
