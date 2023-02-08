@@ -15,13 +15,13 @@ export default async function xnLogin(id: number | string) {
   const { url, userName, password } = xnLogin;
 
   const browser = await puppeteer.launch({
-    // 路径
-    executablePath:
-      "/usr/bin/chromium-browser",
-    timeout: 1000 * 30,
+    args: ["--no-sandbox"],
   });
 
   const page = await browser.newPage();
+
+  // Configure the navigation timeout
+  await page.setDefaultNavigationTimeout(0);
 
   await page.goto(url);
 
@@ -49,6 +49,8 @@ export default async function xnLogin(id: number | string) {
   });
 
   logger.success(cookies);
+
+  await browser.close();
 
   return `${id} cookie update success`;
 }
