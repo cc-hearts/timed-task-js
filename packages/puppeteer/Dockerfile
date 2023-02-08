@@ -6,6 +6,7 @@ WORKDIR /opt/timed-task-js
 
 COPY . .
 
+USER root
 
 RUN npm config set registry https://registry.npmmirror.com/
 
