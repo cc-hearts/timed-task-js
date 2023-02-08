@@ -12,10 +12,10 @@ RUN npm config set registry https://registry.npmmirror.com/
 
 RUN npm install -g pnpm
 
-RUN pnpm install -w
+RUN pnpm install
 
-RUN pnpm --filter @repo/utils install
-RUN pnpm --filter @repo/config install
+# RUN pnpm --filter @repo/utils install
+# RUN pnpm --filter @repo/config install
 
 
 RUN pnpm --filter @repo/puppeteer install
