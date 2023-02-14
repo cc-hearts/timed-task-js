@@ -38,10 +38,7 @@ export async function interTask(acc: interTaskInstance) {
     if (!cacheId) {
       logger.success("=======interval task pending========" + url);
       const res = await Fetch.request(url, method, params, headers);
-      logger.success(
-        `=======interval task success======== ${url} , request data:`,
-        res.data
-      );
+      logger.success(`=======interval task success======== ${url} , request data:`, res.data);
       await redis.set(String(id), url, "EX", 60 * 60 * 24);
     }
   } catch (e) {

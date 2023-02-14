@@ -11,6 +11,7 @@ async function useTask() {
   interTaskList = async () => {
     // 查询所有的任务
     const taskList = await Task.searchAllTask();
+
     if (taskList instanceof Array) {
       taskList.forEach(async (acc) => {
         const { taskType } = acc;
